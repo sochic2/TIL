@@ -1,0 +1,40 @@
+*{
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.text-center{
+    text-align: center
+}
+
+.text-large {
+    font-size: 200%;
+}
+
+.text-blue {
+    color : blue
+}
+
+.text-red {
+    color : red
+}
+
+/* 맨 위에도 p값 lunch도 p값이지만 그중에 
+맨 밑에꺼, id로 구별, 적용됨 */
+
+
+
+.container {
+    background: cadetblue;
+}
+
+/* div p {
+    color: green;
+} */
+
+div > p {
+    color: hotpink
+}
+
+div ~ p {
+    color : black
+}
