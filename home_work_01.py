@@ -22,7 +22,12 @@
 # print(shortcut("goodbye")) #=> gdby
 
 
-some_list = [1, 2, 3, []]
-print(some_list)
+# some_list = [1, 2, 3, []]
+# print(some_list)
+# import math
+# a = 0.1*3
+# b = 0.3
+# print(math.isclose(a, b))
 
-
+name = "철수"
+print(f'"안녕, {name}야"')
