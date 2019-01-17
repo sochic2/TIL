@@ -1,0 +1,8 @@
+.none {
+    display: none;
+}
+/* 공간도 사라짐 */
+
+.hidden {
+    visibility: hidden;
+}

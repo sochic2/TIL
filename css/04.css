@@ -1,0 +1,60 @@
+body {
+    height: 10000px
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+}
+
+.padding-10 {
+    padding: 10px
+}
+
+/* 박스사이즈를 고정해두고 다른걸 먹임 */
+.border-box {
+    box-sizing: border-box;
+}
+
+/* top right bottom left   3개쓰면 top, right/left, bottom   2개면 top/bottom, left/right */
+.margin-50 {
+    margin: 50px;
+}
+
+.margin-top-100{
+    margin-top: 100px;
+}
+
+.margin-3 {
+    margin: 10px 20px 30px;
+}
+
+.border {
+    /* 네방향 한방에 다주기
+    border: 5px black dashed; */
+    border-style: dashed;
+    border-bottom-style: double;
+    border-top-style: solid;
+    border-left-style: inset;
+    border-bottom-color: aqua;
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+    border-radius: 100px;
+    /* 퍼센트로도 깎임 */
+    /* border-radius: 50%; */
+}
+
+.football {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border-radius: 10% 75%;
+    opacity: 0.1;         /*투명도 설정*/
+}
+
