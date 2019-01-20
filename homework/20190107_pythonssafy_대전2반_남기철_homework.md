@@ -2,7 +2,7 @@
 
    - True, False, list
 
-2.  파이썬에서 float는 실수를 표현하는 과정에서 같은 값으로 일치되지 않습니다.
+2. 파이썬에서 float는 실수를 표현하는 과정에서 같은 값으로 일치되지 않습니다.
 
    (floating point roundng error) 
 
@@ -22,7 +22,7 @@
 
    - name = “철수”
 
-     print(f’”안녕, {name}야”’)
+     print(f’안녕, {name}야’)
 
 
 
@@ -38,4 +38,4 @@
 
    => 변경 할 수 있는것 : list, set, Dictionary    |  변경 불가능한 것 :  String, Range, Tuple   
 
-   String, List, Tuple, Range, Set, Dictionary
+  

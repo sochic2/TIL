@@ -26,9 +26,9 @@
 
 3. 딕셔너리는 key, value로 구성되어 있습니다. 따라서, 딕셔너리 my_dict 각각의 상
    황에 따라 반복문을 수행할 수 있도록 빈칸을 채우시오.
-   key : for key in __**my_dict.keys()**:
-   value : for value in _**my_dict.values()**:
-   key와 value : for key, value in _**my_dict.items()** :
+   key : for key in **my_dict.keys()**:
+   value : for value in **my_dict.values()**:
+   key와 value : for key, value in **my_dict.items()** :
 
 
 
