@@ -8,8 +8,10 @@
 
 2. 다음은 부트스트랩의 어떤 component이며 아래와 동일하게 만들어 보시오.
 
+   component alert
+
 ~~~html
-<div class="alert alert-info" role="alert">
+<div class="alert alert-primary" role="alert">
                 Hello SSAFY ?!
 </div>
 ~~~
