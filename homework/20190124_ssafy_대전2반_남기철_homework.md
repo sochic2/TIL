@@ -4,7 +4,7 @@
 
 
 
-==>디스플레이
+==>디바이스
 
 
 
@@ -29,3 +29,4 @@ Medium => 720px
 Large => 960px
 
 Extra large => 1140px
+

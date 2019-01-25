@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody&subset=korean');
+    
+body {
+    height: 10000px;
+}
+
+.section {
+    background-image: url(lake2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'HiMelody', Cursive;
+    height: 350px;
+    text-align: center;
+}
+
+
+
