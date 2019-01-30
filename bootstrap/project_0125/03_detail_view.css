@@ -10,7 +10,21 @@
     height: 350px;
     text-align: center;
 }
+.section:hover {
+    background-image: url(lake2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'HiMelody', Cursive;
+    height: 350px;
+    text-align: center;
+    opacity: 0.5;
+  
+}
 
 nav {
     font-family: 'Stylish', Cursive;
+}
+
+img { 
+    cursor: pointer; 
 }
