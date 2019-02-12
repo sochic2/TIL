@@ -1,42 +1,39 @@
 import sys
 sys.stdin = open('그래프경로_input.txt')
 
+T = int(input())
 
 def seek(v):
-    global visited, V, E, SG
+    global data, visited, SG, result
     value = v.pop()
     if value[1] == SG[1]:
+
         result.append(SG[1])
 
-
-    for i in range(len(a)):
-
-        if value[1] == a[i][0] and visited[i] == 0:
+    for i in range(len(data)):
+        if value[1] == data[i][0] and visited[i] == 0:
             visited[i] = 1
-            seek(a[i])
+            seek([data[i]])
 
 
 
 
 
-
-
-T = int(input())
 for tc in range(T):
     V, E = map(int, input().split())
-    a = []
+    data = []
     for i in range(E):
-        a  += [list(map(int, input().split()))]
+        data  += [list(map(int, input().split()))]
     SG = list(map(int, input().split()))
-    print(SG)
+    # print(SG)
 
-    print(a)
-    print(f'V, E : {V}, {E}')
-    visited = [0] * 50
+    # print(data)
+    # print(f'V, E : {V}, {E}')
+    visited = [0] * E
     result = []
 
     seek([[ SG[0], SG[0] ]])
-    print(result)
+    print(f'#{tc+1} {1 if result else 0}')
 
 
 
