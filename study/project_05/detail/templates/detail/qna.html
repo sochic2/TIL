@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Q & A{% endblock %}
+
+{% block css %}{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <h1 class="d-flex justify-content-center">Q & A</h1><br>
+<form>
+    <div class="row">
+  <div class="form-group col-lg">
+    <label for="title">제목</label>
+    <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="제목을쓰세요">
+  </div>
+<div class="form-group col-lg">
+    <label for="exampleInputEmail1">이메일</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  </div>
+  
+  
+  
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">내용</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+{% endblock %}

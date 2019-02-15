@@ -14,6 +14,10 @@ pyenv virtualenvs로 가상환경 됐나 확인
 
 pyenv local django-venv 장고 가상환경 켜기
 
+pip install django
+
+
+
 django-admin startproject first_workshop .       프로젝트만들기 ex)PROJECT01 같이 큰거
 
 python manage.py startapp student      애들 생김 앱 생성
@@ -54,7 +58,7 @@ TIME_ZONE = 'Asia/Seoul'
 
   commit 01_django settings
 
-  ------------------
+------------------
 
   ### 1. 처리할 views(controller)
 

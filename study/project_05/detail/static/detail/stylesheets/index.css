@@ -1,0 +1,14 @@
+header {background-image:url("/static/detail/images/sky.jpg");
+        height:350px;
+        width:100%;
+        background-size: cover;
+        }
+
+h1 {text-align: center;
+    line-height: 350px;
+    color: white;
+    }
+
+body {
+    height: 10000px;
+}
