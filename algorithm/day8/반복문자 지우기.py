@@ -8,7 +8,7 @@ for tc in range(T):
 
     a = []
     for i in data:
-        if bool(a) == False or a[-1] != i:
+        if len(a) == 0 or a[-1] != i:
             a.append(i)
 
         else:
@@ -18,3 +18,4 @@ for tc in range(T):
 
 
     print(f'#{tc+1} {len(a)}')
+

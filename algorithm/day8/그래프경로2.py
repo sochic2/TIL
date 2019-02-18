@@ -4,7 +4,7 @@ sys.stdin = open('그래프경로_input.txt')
 T = int(input())
 
 def seek(v):
-    global S, G, data, visited, SG, result
+    global S, G, result
 
     if v[0][1] == G:
 
