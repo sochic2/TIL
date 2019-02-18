@@ -28,13 +28,25 @@ for tc in range(T):
             else:
                 data[p][-1-q] = 0
 
-    print(data)
+    # print(data)
     result = 0
+    stack = []
+    for r in range(x):
+        for s in range(x):
+            if data[r][s] == 1:
+                stack += [data[r][s]]
+            elif data[r][s] == 2 :
+                if stack[-1] == 1:
+                    stack += [data[r][s]]
+                    result += 1
+                else:
+                    stack += [data[r][s]]
 
 
 
 
+    # print(stack)
+    # print(result)
 
-
-    # print(f'{tc+1}, {result}')
+    print(f'#{tc+1} {result}')
 
