@@ -1,0 +1,19 @@
+{% extends 'students/base.html' %}
+{% block title %}New{% endblock %}
+{% block body %}
+    <h1>New</h1>
+    <hr>
+    <form action = "/students/create/" method='POST'>
+        {% csrf_token %}
+       
+        이름 : <input type="text" name="name"/><br>
+        e-mail : <input type="e-mail" name="email"/><br>
+        생일 : <input type="date" name="birthday"/><br>
+        나이 : <input type="int" name="age"/><br>
+        <input type="submit" value="Submit"/>
+    </form>
+    
+    <a href="/students/">BACK</a>
+    
+    
+{% endblock %}

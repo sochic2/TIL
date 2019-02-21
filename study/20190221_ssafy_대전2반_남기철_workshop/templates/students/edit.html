@@ -1,0 +1,19 @@
+{% extends 'students/base.html' %}
+{% block title %}New{% endblock %}
+{% block body %}
+    <h1>New</h1>
+    <hr>
+    <form action = "/students/{{ student.pk }}/update/" method='POST'>
+        {% csrf_token %}
+       
+        이름 : <input type="text" name="name" value="{{ student.name }}"/><br>
+        e-mail : <input type="e-mail" name="email" value="{{ student.email }}"/><br>
+        생일 : <input type="date" name="birthday" value="{{ student.birthday||date:'Y-m-d' }}"/><br>
+        나이 : <input type="int" name="age" value="{{ student.age }}"/><br>
+        <input type="submit" value="Submit"/>
+    </form>
+    
+    <a href="/students/">BACK</a>
+    
+    
+{% endblock %}
