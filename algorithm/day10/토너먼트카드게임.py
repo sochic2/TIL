@@ -4,7 +4,7 @@ sys.stdin = open('토너먼트카드게임_input.txt')
 
 def winner(data):
     if len(data) - data.count(0) > 2:
-        return winner(data[:(len(data) + 1) // 2]) + winner(data[(len(data) + 1) // 2:])
+        return winner(winner(data[:(len(data) + 1) // 2]) + winner(data[(len(data) + 1) // 2:]))
     if len(data) - data.count(0) == 2:
         a = []
         for idx, value in enumerate(data):
@@ -36,15 +36,9 @@ for tc in range(T):
     N = int(input())
     data = list(map(int, input().split()))
 
-    # print(winner(data))
-    a = winner(data)
+    result = winner(data)
+    for i in range(len(result)):
+        if result[i]:
+            print(f'#{tc+1} {i+1}')
 
-    while a.count(0) != N - 1 or b.count(0) != N - 1:
-        b = winner(a)
-        a = winner(b)
-    result = 0
-    for i in range(len(a)):
-        if a[i] != 0:
-            result = i + 1
-
-    print(f'#{tc + 1} {result}')
+        
