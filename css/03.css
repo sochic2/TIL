@@ -9,6 +9,8 @@ p, h3 {
     background-color: black;
 }
 
+
+
 div {
     width: 100px;
     height: 100px;
@@ -31,7 +33,7 @@ h1 + p {
 
  /* > 자식선택자 */
 ol > li {
-    color: coral;
+    color: crimson;
 }
 
 ol#chocolate>li {
@@ -46,3 +48,10 @@ ul li {
 ul li:nth-of-type(2) {
     color: black;
 }
+
+ul li:nth-child(2) {
+    color: skyblue;
+}
+
+/* 형제:nth-of-type(2) 같은 타입 형제중에 2번째 */
+/* 형제:nth-child(2) 자식중에 2번째 */

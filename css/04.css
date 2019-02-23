@@ -45,7 +45,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: darkgreen;
-    border-radius: 100px;
+    border-radius: 100px
     /* 퍼센트로도 깎임 */
     /* border-radius: 50%; */
 }
@@ -54,7 +54,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: crimson;
-    border-radius: 10% 75%;
+    border-radius: 10% 70%;
     opacity: 0.1;         /*투명도 설정*/
 }
 
