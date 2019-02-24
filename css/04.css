@@ -54,7 +54,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: crimson;
-    border-radius: 10% 70%;
+    border-radius: 10% 80%;
     opacity: 0.1;         /*투명도 설정*/
 }
 
