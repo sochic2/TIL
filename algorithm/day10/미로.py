@@ -1,21 +1,15 @@
 import sys
 sys.stdin = open('미로_input.txt')
 
-
 def route(start):
     global  result
-    if data[start[0]][start[1]] == 2:
-        result = 1
-    else:
-        data[start[0]][start[1]] = 9
-        for j in range(4):
-            if data[start[0] + dx[j]][start[1] + dy[j]] == 0:
-                a = [start[0] + dx[j], start[1] + dy[j]]
-                route(a)
-            elif data[start[0] + dx[j]][start[1] + dy[j]] ==2:
-                result = 1
-
-
+    data[start[0]][start[1]] = 9
+    for j in range(4):
+        if data[start[0] + dx[j]][start[1] + dy[j]] == 0:
+            a = [start[0] + dx[j], start[1] + dy[j]]
+            route(a)
+        elif data[start[0] + dx[j]][start[1] + dy[j]] ==2:
+            result = 1
 
 T = int(input())
 for tc in range(T):
@@ -36,8 +30,6 @@ for tc in range(T):
     data.append(wall)
     # print(data)
 
-
-
     dx = [1, -1, 0, 0]
     dy = [0, 0, 1, -1]
 
@@ -48,8 +40,6 @@ for tc in range(T):
              start = [i, j]
 
     result = 0
-
-
 
     route(start)
     print(f'#{tc+1} {result}')
