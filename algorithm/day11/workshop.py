@@ -10,22 +10,11 @@ def find(data):
             if data[i][j] != 0:
                 p = i
                 result += [[]]
-<<<<<<< HEAD
-=======
-
-                while data[p][j] !=0:
->>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
 
                 while data[p][j] != 0:
                     result[-1].append(data[p][j])
                     data[p][j] = 0
                     p += 1
-<<<<<<< HEAD
-=======
-
-
-    return result
->>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
 
     return result
 
@@ -39,7 +28,6 @@ for tc in range(1, T + 1):
     for i in range(n):
         data += [list(map(int, input().split()))]
     # print(n, data)
-<<<<<<< HEAD
     change_data = (find(data))
     result_2 = []
 
@@ -47,16 +35,6 @@ for tc in range(1, T + 1):
         if len(i) not in result_2:
             result_2 += [len(i)]
     result_3 = [0] * len(result_2)
-=======
-    change_data=(find(data))
-    result_2 = []
-
-
-    for i in change_data:
-        if len(i) not in result_2:
-            result_2 += [len(i)]
-    result_3 = [0]*len(result_2)
->>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
 
     for j in range(len(result_2)):
         for k in change_data:
@@ -69,11 +47,7 @@ for tc in range(1, T + 1):
         final_result += [[result_2[o], result_3[o]]]
 
     for p in final_result:
-<<<<<<< HEAD
         p.insert(0, p[0] * p[1])
-=======
-        p.insert(0, p[0]*p[1])
->>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
 
     final_result.sort()
 
@@ -81,38 +55,4 @@ for tc in range(1, T + 1):
     for z in final_result:
         print(z[1], z[2], end=' ')
 
-<<<<<<< HEAD
     print()
-=======
-    print()
-
-
-
-
-
-
-
-
-
-
-
-
-
-            #
-            # def find(data):
-            #     result = []
-            #
-            #     for i in range(len(data)):
-            #         for j in range(len(data)):
-            #             if data[i][j] != 0:
-            #                 p = i
-            #                 result += [[]]
-            #                 cnt = 0
-            #                 while data[p][j] != 0:
-            #                     result[-1].append(data[p][j])
-            #                     data[p][j] = 0
-            #                     p += 1
-            #                     cnt += 1
-            #                 result.append(cnt)
-            #     return result
->>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
