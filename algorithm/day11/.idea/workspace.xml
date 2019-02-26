@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bc76a66a-c4b7-4c48-b019-ede9f2f16b15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/workshop.py" beforeDir="false" afterPath="$PROJECT_DIR$/workshop.py" afterDir="false" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +19,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/원형큐.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="836">
+=======
+            <state relative-caret-position="240">
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
               <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
@@ -24,7 +32,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/연습문제3.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="285">
+=======
+            <state relative-caret-position="255">
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
               <caret line="15" column="20" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
@@ -33,7 +45,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/연습문제 변형.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="114">
+=======
+            <state relative-caret-position="102">
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
               <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
             </state>
           </provider>
@@ -42,8 +58,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workshop.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="418">
               <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+=======
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="60" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
             </state>
           </provider>
         </entry>
@@ -51,7 +72,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/queue.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="418">
+=======
+            <state relative-caret-position="242">
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
               <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
@@ -60,8 +85,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/행렬찾기_input.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="323">
               <caret line="17" column="28" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="28" />
+=======
+            <state relative-caret-position="238">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
             </state>
           </provider>
         </entry>
@@ -74,6 +104,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>1 2 3 4 5 6 7 8 9 1 2 3 4</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -103,6 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,7 +150,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,9 +259,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\user\PycharmProjects\untitled1\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workshop.py" />
@@ -269,7 +304,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14383562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -291,45 +325,75 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/원형큐.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/연습문제3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="20" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/연습문제 변형.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+<<<<<<< HEAD
+        <state relative-caret-position="836">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+=======
+        <state relative-caret-position="102">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/queue.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="285">
+          <caret line="15" column="20" selection-end-line="24" selection-end-column="12" />
+=======
+        <state relative-caret-position="242">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/연습문제3.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="114">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+=======
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-end-line="24" selection-end-column="12" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/원형큐.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="418">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+=======
+        <state relative-caret-position="240">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/행렬찾기_input.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="323">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="28" />
+=======
+        <state relative-caret-position="238">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/workshop.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="418">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+=======
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="60" />
+>>>>>>> e7f8a2f50014c2d3e4508a1cbc68c0249e6ad8f5
         </state>
       </provider>
     </entry>
