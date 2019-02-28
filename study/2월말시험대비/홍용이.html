@@ -1,0 +1,49 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INDEX</title>
+</head>
+<body>
+    <h1>학 생 목 록</h1>
+    <hr>
+    {% for student in students %}
+        학 생 명 : {{ student.name }}
+        이 메 일 : {{ student.email }}
+        <a href="/students/{{ student.pk }}/">[학생정보 보러가기]</a>
+        <a href="/students/{{ student.pk }}/edit/">[학생정보 수정하기]</a>
+        <a href="/students/{{ student.pk }}/delete/ onclick = return confirm("삭제하시겠습니까?")">[학생정보 삭제하기]</a>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
+
+
+<!-- detail.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DETAIL</title>
+</head>
+<body>
+    <h1>학 생 정 보</h1>
+    학 생 명 : {{ student.name }}
+    이 메 일 : {{ student.title }}
+    <a href="/students/">[학 생 목 록]</a>
+    <a href="/students/{{ student.pk }}/delete/" onclick = "return confirm("삭제하시겠습니까?")">[학 생 정 보 삭 제]</a>
+
+
+    
+
+
+</body>
+</html>

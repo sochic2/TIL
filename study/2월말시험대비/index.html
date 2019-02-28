@@ -1,0 +1,26 @@
+{% extends 'students/base.html' %}
+
+{% block title %} INDEX {% endblock %}
+
+{% block body %}
+<h1>INDEX 페이지!</h1>
+<hr>
+<a href="/students/new/">새로만들러가기</a>
+<form action="/students/create/">
+    <input type="text">
+    name : <input type="text" name="name"/>
+    e-mail : <input type="e-mail" name="e-mail"/>
+    <input type="SUBMIT" value="SUBMIT"/>
+</form>
+
+{% for student in students %}
+    {{ student.name }}
+    {{ student.e-mail }}
+    <hr>
+    <form action="/students/{{ student.pk }}/delete/">[DELETE]</form>
+{% endfor %}
+
+
+
+
+{% endblock %}
