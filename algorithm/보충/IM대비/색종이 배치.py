@@ -17,16 +17,17 @@ def color(single):
 
 for i in data:
     color(i)
-
+normal_H = 0
 normal_S = 0
 normal_T = 0
 for i in data:
     normal_T += (i[2] + i[3]) * 2
     normal_S += (i[2] * i[3])
-
+    normal_H += (i[3])
 real_S = 0
 real_T = 0
 dgs = 0
+
 
 y_wall = [0] * 103
 paper.append(y_wall)
@@ -62,7 +63,7 @@ for x in range(1, 102):
 #
 # print(real_S)
 # print(real_T)
-print(dgs)
+
 if dgs != 0 and real_S == normal_S and real_T == normal_T:
     print(1)
 elif real_S == normal_S and real_T < normal_T:
