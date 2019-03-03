@@ -22,6 +22,7 @@ for _ in range(M):
     paper += [list(map(int, input()))]
 
 P = int(input())
+
 pattern_1 = []
 pattern_2 = []
 pattern_3 = []
