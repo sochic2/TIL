@@ -20,7 +20,7 @@ def route(data, v):
             position = i
     # print(visited)
     # print(len(visited))
-    print(f'#{tc} {position}')
+    print('#{} {}'.format(tc, position))
 
 
 

@@ -53,11 +53,13 @@ for tc in range(1, T+1):
     # print(visit)
     visit[start[0]][start[1]] = 1
     maze(start)
+
     result = 0
     for z in range(4):
         neo_x = goal[0]+dx[z]
         neo_y = goal[1]+dy[z]
         if visit[neo_x][neo_y]:
             result = visit[neo_x][neo_y] - 1
-    print(f'#{tc} {result}')
+
+    print('#{} {}'.format(tc, result))
 

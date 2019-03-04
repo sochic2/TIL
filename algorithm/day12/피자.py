@@ -35,6 +35,6 @@ for tc in range(1, T+1):
 
     for i in oven:
         if i != 0:
-            print(f'#{tc} {i}')
+            print('#{} {}'.format(tc, i))
 
 

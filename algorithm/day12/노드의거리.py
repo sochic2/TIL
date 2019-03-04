@@ -19,7 +19,8 @@ def BFS(data, v):
     if visit[G]:
         result = visit[G]-1
 
-    print(f'#{tc} {result}')
+    print('#{} {}'.format(tc, result))
+
 
 T = int(input())
 

@@ -17,9 +17,6 @@ for z in degree:
 
 solution.pop(0)
 
-
-
-
 def turning(original, cnt) :
     global N
 

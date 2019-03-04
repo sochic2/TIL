@@ -1,5 +1,7 @@
 import sys
 sys.stdin = open('원안의사각형.txt')
+
+
 R = int(input())
 
 result = 0
@@ -12,6 +14,7 @@ for i in range(1, R+1):
             result +=1
 
 print(result*4)
+
 
 
 
