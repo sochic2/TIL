@@ -1,38 +1,36 @@
-def snail(t, p, count):
-    global n
-    paper[t][p] = count
-    a = count
-    if count == n**2:
-        return
-
-    elif t != 0 and p == 0 and paper[t-1][p] ==0:
-        return snail(t-1, p, a+1)
-
-    else:
-
-        for i in range(4):
-            if p + dx[i] < 0 or p + dx[i] >= n or t + dy[i] < 0 or t + dy[i] >= n:
-                continue
-            if paper[t + dy[i]][p + dx[i]] == 0:
-                return snail(t + dy[i], p + dx[i], a+1)
-                break
-
-
 import sys
 sys.stdin = open('달팽이사각형.txt')
 n = int(input())
 
 paper = [[0]*n for _ in range(n)]
 
-
-
 dx = [1, 0, -1, 0]
 dy = [0, 1, 0, -1]
 
+count = 1
+x = -1
+y = 0
 
+while count != n**2 +1:
 
+    for i in range(n):
+        paper[y][x+1] = count
+        x += 1
+        count += 1
 
-snail(0, 0, 1)
+    for j in range(n-1):
+        paper[y+1][x] = count
+        y += 1
+        count += 1
+    for k in range(n-1):
+        paper[y][x-1] = count
+        x -= 1
+        count += 1
+    for l in range(n-2):
+        paper[y-1][x] = count
+        y -=1
+        count += 1
+    n -= 2
 
-for i in range(n):
+for i in range(len(paper)):
     print(*paper[i])
