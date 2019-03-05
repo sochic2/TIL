@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="767792bf-d5fd-48b1-b63a-6f1c94fb4578" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/IM대비.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/빙고.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/빙고.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/.idea/day12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/.idea/day12.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/workshop.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/workshop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/노드의거리.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/노드의거리.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/미로의거리.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/미로의거리.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day12/피자.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day12/피자.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/보충.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/보충.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/원안의 사각형" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/원안의 사각형.py" beforeDir="false" afterPath="$PROJECT_DIR$/원안의 사각형.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/원안의사각형.txt" beforeDir="false" afterPath="$PROJECT_DIR$/원안의사각형.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/회전.py" beforeDir="false" afterPath="$PROJECT_DIR$/회전.py" afterDir="false" />
-    </list>
+    <list default="true" id="767792bf-d5fd-48b1-b63a-6f1c94fb4578" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +12,7 @@
     <session id="-405823373">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.opened" value="2" />
         </counts>
@@ -356,14 +336,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27006507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
