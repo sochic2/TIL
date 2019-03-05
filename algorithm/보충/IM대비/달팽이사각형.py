@@ -4,8 +4,6 @@ n = int(input())
 
 paper = [[0]*n for _ in range(n)]
 
-dx = [1, 0, -1, 0]
-dy = [0, 1, 0, -1]
 
 count = 1
 x = -1
