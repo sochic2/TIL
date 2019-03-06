@@ -14,3 +14,5 @@ for _ in range(L):
     direction.append(list(input().split()))
 
 
+
+
