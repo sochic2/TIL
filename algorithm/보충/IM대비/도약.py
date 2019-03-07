@@ -14,3 +14,4 @@ for i in range(N-2):
             if (lake[j] - lake[i]) * 2 >= lake[k]-lake[j] and lake[j] - lake[i] <=lake[k]-lake[j] :
                 solution +=1
 print(solution)
+

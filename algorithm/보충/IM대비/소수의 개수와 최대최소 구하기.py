@@ -5,7 +5,7 @@ a, b = map(int, input().split())
 
 def check_sosu(n):
     sosu = [0, 0] + [1] * (n-1)
-    for i in range(len(sosu)):
+    for i in range(int(len(sosu)**0.5)+1):
         if sosu[i] != 0:
             k = i * 2
             while k <= n:

@@ -35,8 +35,8 @@ while True:
     if data[a][b] == 0:
         cnt += 1
         data[a][b] = 9
-    elif data[a][b] == 9:
-        data[a][b] = 9
+    # elif data[a][b] == 9:
+    #     data[a][b] = 9
     elif data[a][b] == 1:
 
         a = a - dy[direction[dno]]
