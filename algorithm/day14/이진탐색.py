@@ -1,11 +1,12 @@
+import sys
+sys.stdin = open('이진탐색.txt')
+
 def inorder(node, solution):
     if node != 0:
         inorder(graph[node][0], solution)
         solution += [node]
         inorder(graph[node][1], solution)
 
-import sys
-sys.stdin = open('이진탐색.txt')
 T = int(input())
 for tc in range(1, 1+T):
     N = int(input())

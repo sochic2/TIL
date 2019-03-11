@@ -19,10 +19,10 @@ for tc in range(1, T+1):
         elif len(a) == 2:
             numbers[int(a[0])] = int(a[1])
 
-    # print(numbers)
-    # print(op)
-    # print(l_child)
-    # print(r_child)
+    print(numbers)
+    print(op)
+    print(l_child)
+    print(r_child)
 
     while numbers[1] == 0:
         for i in range(N, 0, -1):
@@ -35,6 +35,7 @@ for tc in range(1, T+1):
                     numbers[i] = numbers[l_child[i]] * numbers[r_child[i]]
                 if op[i] == '/':
                     numbers[i] = numbers[l_child[i]] // numbers[r_child[i]]
+
 
 
 
