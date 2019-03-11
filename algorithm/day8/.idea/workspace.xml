@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8e63ee3-6e79-49c6-ba38-f54634d2e55a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../day7/.idea/day7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../day7/.idea/day7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day7/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/day8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/day8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/그래프경로2.py" beforeDir="false" afterPath="$PROJECT_DIR$/그래프경로2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/반복문자 지우기.py" beforeDir="false" afterPath="$PROJECT_DIR$/반복문자 지우기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/그래프경로.py" beforeDir="false" afterPath="$PROJECT_DIR$/그래프경로.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +21,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workshop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="459">
               <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workshop_input.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="1" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/그래프경로.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -50,16 +63,16 @@
         <option value="$PROJECT_DIR$/괄호검사.py" />
         <option value="$PROJECT_DIR$/종이붙히기.py" />
         <option value="$PROJECT_DIR$/그래프경로_2.py" />
-        <option value="$PROJECT_DIR$/그래프경로.py" />
         <option value="$PROJECT_DIR$/그래프경로3.py" />
         <option value="$PROJECT_DIR$/../../../../왜가리/그래프경로.py" />
         <option value="$PROJECT_DIR$/workshop.py" />
         <option value="$PROJECT_DIR$/그래프경로2.py" />
         <option value="$PROJECT_DIR$/반복문자 지우기.py" />
+        <option value="$PROJECT_DIR$/그래프경로.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="671" />
     <option name="y" value="11" />
     <option name="width" value="1251" />
@@ -73,7 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -85,6 +97,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -103,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.반복문자 지우기">
+  <component name="RunManager" selected="Python.그래프경로">
     <configuration name="반복문자 지우기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day8" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,27 +138,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="그래프경로" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="day8" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\student\PycharmProjects\untitled\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/그래프경로.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="그래프경로2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day8" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,6 +151,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/그래프경로2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="그래프경로" type="PythonConfigurationType" factoryName="Python">
+      <module name="day8" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\user\PycharmProjects\untitled1\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/그래프경로.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,16 +268,13 @@
       <item itemvalue="Python.그래프경로" />
       <item itemvalue="Python.그래프경로2" />
       <item itemvalue="Python.workshop" />
-      <item itemvalue="Python.괄호검사" />
       <item itemvalue="Python.반복문자 지우기" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.반복문자 지우기" />
         <item itemvalue="Python.그래프경로2" />
-        <item itemvalue="Python.괄호검사" />
         <item itemvalue="Python.workshop" />
-        <item itemvalue="Python.그래프경로" />
       </list>
     </recent_temporary>
   </component>
@@ -282,15 +292,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="671" y="11" width="1251" height="1047" extended-state="1" />
-    <editor active="true" />
+    <frame x="671" y="11" width="1251" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35037097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35037097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" weight="0.25191677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,13 +324,6 @@
     <entry file="file://$PROJECT_DIR$/그래프경로_2.py" />
     <entry file="file://$PROJECT_DIR$/그래프경로3.py" />
     <entry file="file://$PROJECT_DIR$/../../../../왜가리/그래프경로.py" />
-    <entry file="file://$PROJECT_DIR$/그래프경로.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/종이붙히기.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -366,7 +368,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workshop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="459">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
@@ -375,6 +377,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/그래프경로.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>

@@ -32,29 +32,43 @@ for tc in range(1, T+1):
         for j in range(8):
             new_y = y+dy[j]
             new_x = x+dx[j]
-            if table[new_y][new_x] != i[2]:
-                while table[new_y][new_x]:
+            if table[new_y][new_x] != i[2] and table[new_y][new_x] != 0:
+                flag = 0
+                while True:
 
                     new_y += dy[j]
                     new_x += dx[j]
                     if table[new_y][new_x] == i[2]:
                         position_y = new_y - dy[j]
                         position_x = new_x - dx[j]
-                if table[position_y][position_x] == table[y][x]:
-                    while (position_y, position_x) != (y, x):
+                        flag = 1
+                        break
+                    elif table[new_y][new_x] == 0:
+                        break
+
+
+                # for c in table:
+                #     print(*c)
+                # print()
+                if flag == 1:
+                    while True:
                         table[position_y][position_x] = i[2]
+                        # for c in table:
+                        #     print(*c)
+                        # print()
                         position_x -= dx[j]
                         position_y -= dy[j]
+                        if position_y == y and position_x == x:
+                            break
 
 
 
 
 
 
-
-
-    # for i in table:
-    #     print(*i)
+    #
+    # for c in table:
+    #     print(*c)
 
     black = 0
     white = 0
