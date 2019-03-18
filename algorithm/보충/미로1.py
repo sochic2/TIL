@@ -31,7 +31,7 @@ for _ in range(1, T+1):
     for i in range(16):
         for j in range(16):
             if maze[i][j] == 2:
-                start = [j, i]
+                start = [i, j]   #왜 start = [j, i] 라고 돼있었지?
     solution = 0
     # print(start)
 
