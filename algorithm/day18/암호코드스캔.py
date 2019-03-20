@@ -46,12 +46,27 @@ for tc in range(1, T+1):
             else:
                 change_data[i] += binary_num[int(data[i][j])]
 
-    result = []
-    flag = 0
+
+
     for i in range(len(change_data)):
         if sum(change_data[i]):
             for j in range(len(change_data[i]), -1, -1):
+                sec_num = []
+                flag = 0
                 if change_data[i][j] == 1 and change_data[i-1][j] == 0:
+                    bi_to_num = []
+                    cnt_1 = 0
+                    cnt_2 = 0
+                    cnt_3 = 0
+                    x = j
+                    while x!=0:
+                        if change_data[i][x] == 1:
+                            cnt_3 += 1
+                        elif change_data[i][x] == 0:
+                            flag = 1
+                            cnt_2 += 1
+                        elif change_data[i][x] == 1 and flag==1:
+                            cnt_1 += 1
 
-
+                        x -= 0
 
