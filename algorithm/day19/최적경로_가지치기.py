@@ -19,8 +19,8 @@ start_time = time.time()
 #     if plus < min :
 #         min = plus
 
-def perm(n, k):
-    global min, plus
+def perm(n, k, plus):
+    global min
 
     if k == n :
         if plus < min:
@@ -28,7 +28,7 @@ def perm(n, k):
         return
 
     else:
-        plus = 0
+
         for i in range(k, n):
             arr[i], arr[k] = arr[k], arr[i]
             if i == 0:
@@ -42,7 +42,7 @@ def perm(n, k):
             if plus > min:
                 return
 
-            perm(n, k+1)
+            perm(n, k+1, plus)
             arr[i], arr[k] = arr[k], arr[i]
 
 
@@ -57,10 +57,11 @@ for tc in range(1, T+1):
     data.append(data.pop(2))
     data.append(data.pop(2))
     arr = list(range(1, N+1))
+    
     min = 987654321
 
 
-    perm(N, 0)
+    perm(N, 0, 0)
     print('#{} {}'.format(tc, min))
 print(time.time() - start_time, 'seconds')
 
