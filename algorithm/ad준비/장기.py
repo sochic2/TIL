@@ -1,30 +1,30 @@
 def BFS(y, x):
-    global N, M, R, S, C, K, mmin, length, o, p
+    global N, M, R, S, C, K
     cnt = 0
     dy = [-2, -1, 1, 2, 2, 1, -1, -2]
     dx = [1, 2, 2, 1, -1, -2, -2, -1]
-    q.append([y, x, cnt])
+    q.append((y, x, 0))
+    ppan[y][x] = 1
+
     while q:
-        cnt += 1
-        a = q.pop(0)
-        ppan[a[0]][a[1]] = 1
+        r, c, n = q.pop(0)
+
         for i in range(8):
-            if a[0] + dy[i] < 0 or a[1] + dx[i] < 0 or a[0] + dy[i] >= N or a[1] + dx[i] >= M: continue
-            if a[0] + dy[i] == S-1 and a[1] + dx[i] == K-1:
-                print(cnt)
+            if r + dy[i] == S and c + dx[i] == K:
+                print(n +1)
                 return
-            # if ppan[a[0]+dy[i]][a[1]+dx[i]] == 0 and S - a[0]+dy[i] < o + 3 and K - a[1]+dx[i] < p + 3 :
-            if ppan[a[0]+dy[i]][a[1]+dx[i]] == 0:
-                q.append([a[0]+dy[i], a[1] + dx[i]])
+            if r + dy[i] < 0 or c + dx[i] < 0 or r + dy[i] > N - 1 or c + dx[i] > M - 1: continue
 
+            if ppan[r + dy[i]][c + dx[i]] == 0:
 
-
+                q.append((r+dy[i], c + dx[i], n+1))
+                ppan[r+dy[i]][c+dx[i]] = 1
 
 N, M = map(int, input().split())
-R, C, S, K = map(int, input().split())
+R, C, S, K = map(lambda x:int(x)-1, input().split())
 ppan = [[0]* M for _ in range(N)]
-
 q = []
-o = abs(R-S)
-p = abs(C-K)
-BFS(R-1, C-1)
+BFS(R, C)
+
+
+
