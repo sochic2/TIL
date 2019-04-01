@@ -35,5 +35,5 @@ for tc in range(1, T+1):
             if visit[j] == 0 and distance[j] < small:
                 small = distance[j]
                 a = j
-
+    print(distance)
     print('#{} {}'.format(tc, distance[-1]))
