@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ab86209-bebf-43c5-8218-ae4c388a4aad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/예산.py" beforeDir="false" afterPath="$PROJECT_DIR$/예산.py" afterDir="false" />
-    </list>
+    <list default="true" id="7ab86209-bebf-43c5-8218-ae4c388a4aad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +12,10 @@
     <session id="-857395632">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,9 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <marker date="1553763649611" expanded="true" signature="112:712" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -68,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/더하기.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -131,7 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,6 +136,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.장기">
+  <component name="RunManager" selected="Python.최소의 합">
     <configuration name="최소의 합" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ad준비" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,13 +285,9 @@
       <item itemvalue="Python.최소의 합" />
       <item itemvalue="Python.건물세우기" />
       <item itemvalue="Python.구슬고르기1(조합연습1)" />
-      <item itemvalue="Python.더하기" />
-      <item itemvalue="Python.장기" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.장기" />
-        <item itemvalue="Python.더하기" />
         <item itemvalue="Python.구슬고르기1(조합연습1)" />
         <item itemvalue="Python.최소의 합" />
         <item itemvalue="Python.건물세우기" />
@@ -474,9 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <marker date="1553735907819" expanded="true" signature="49:353" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <marker date="1553733137579" expanded="true" signature="12:86" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,9 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <marker date="1553741369153" expanded="true" signature="205:206" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,10 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <marker date="1553750835624" expanded="true" signature="213:465" ph="..." />
-            <marker date="1553750835624" expanded="true" signature="487:712" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,9 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <marker date="1553753123442" expanded="true" signature="130:227" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <marker date="1553749744774" expanded="true" signature="0:666" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,16 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <marker date="1553754081248" expanded="true" signature="62:97" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/더하기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -583,6 +544,13 @@
           <folding>
             <marker date="1553763649611" expanded="true" signature="112:712" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/더하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
