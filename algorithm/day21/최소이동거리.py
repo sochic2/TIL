@@ -13,14 +13,8 @@ for tc in range(1, T+1):
         dis = data[i][2]
         Arr[p1][p2] = dis
 
-
-
     distance = [0] + [987654321]* N
     visit = [0] * (N+1)
-
-    # print(data)
-    # print(Arr)
-
     a = 0
 
     while a != N:
@@ -28,7 +22,7 @@ for tc in range(1, T+1):
         for i in range(len(data)):
             p1 = data[i][0]
             p2 = data[i][1]
-            if p1 == a and visit[p2] == 0:
+            if p1 == a :
                 distance[p2] = min(distance[p2], distance[a] + Arr[p1][p2])
         small = 987654321
         for j in range(len(distance)):

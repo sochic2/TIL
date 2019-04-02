@@ -46,5 +46,5 @@ for tc in range(1, T+1):
     ssum = 0
     mst()
     # print('#{} {}'.format(tc, mst_teacher()))
-
+    print(visit)
     print('#{} {}'.format(tc, ssum))
