@@ -18,7 +18,7 @@ def binary():
             s = mid +1
         else:
             e = mid-1
-    return e
+    return (s+e)//2
 
 
 
