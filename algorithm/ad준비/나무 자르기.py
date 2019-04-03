@@ -1,27 +1,31 @@
-def binary(start, mmax):
-    global solution
-    s = start
-    e = mmax
-    bin = (s + e)//2
+def chk(mid):
     ssum = 0
     for i in range(N):
-        if tree[i] > bin:
-            ssum += tree[i] - bin
-    if ssum == M:
-        solution = bin
-        return
-    elif ssum < M:
-        binary(s, bin-1)
-    elif ssum > M:
-        binary(bin+1, e)
+        if tree[i] > mid:
+            ssum += tree[i] - mid
+    return ssum
 
+def binary():
+    global solution
+    s = minn
+    e = maxxx
+    while s <= e:
+        mid = (s+e)//2
+        a = chk(mid)
+        if a == M:
+            return mid
+        if a > M:
+            s = mid +1
+        else:
+            e = mid-1
+    return e
 
 
 
 N, M = map(int, input().split())
 tree = list(map(int, input().split()))
 maxxx = max(tree)
+minn = min(tree)
 
 solution = 0
-binary(0, maxxx)
-print(solution)
+print(binary())
