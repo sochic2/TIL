@@ -1,17 +1,26 @@
 def bfs():
+    global solution
     while q:
-        r, c, bomb, cnt = q.pop()
+        r, c, bomb, cnt = q.pop(0)
         for i in range(4):
             nr = r + dr[i]
             nc = c + dc[i]
-            if data[nr][nc] == 1:continue
+            if data[nr][nc] == 1: continue
+
+
             if data[nr][nc] == 4:
-                return cnt +1
-            if data[nr][nc] == 2:
+                solution = cnt+1
+
+
+            if data[nr][nc] == 2 and bomb >0:
                 q.append((nr, nc, bomb-1, cnt+1))
+                stack.append((nr, nc, bomb-1, cnt+1))
                 data[nr][nc] = 9
+
             if data[nr][nc] == 0:
                 q.append((nr, nc, bomb, cnt+1))
+                stack.append((nr, nc, bomb, cnt+1))
+                data[nr][nc] = 9
 
 
 
@@ -28,5 +37,10 @@ for r in range(R):
 q = [tuple(start + [3, 0])]
 dr = [0, 0, -1, 1]
 dc = [-1, 1, 0, 0]
-data[start[0]][start[1]] = 1
-print(bfs())
+data[start[0]][start[1]] = 9
+stack = [tuple(start + [3, 0])]
+solution = -1
+bfs()
+# for i in data:
+#     print(*i)
+print(solution)
