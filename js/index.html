@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+            color : white;
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        // alert('Welcome to JS');
+        document.write('<h1>Hello, World!</h1>')
+        document.querySelector('h1').innerText = 'Goodbye, World!';
+        // ES5 에서는 var 키워드를 사용햇다 하지만 우리는 안쓴다
+        // var name = 'harry';
+
+        // ES6+
+        // var function scope
+        // let block scope {}
+        let word = '외안되';
+        document.write(word);
+
+        // 암묵적 전역
+        word = '왜안돼'
+        document.write(word);
+
+        const name = 'harry';
+        document.write(name);
+
+        // 중복되는 name 때문에 밑에거는 에러, 안뜸
+        // name = 'juno';
+        // document.write(name);
+
+        // 식별자 원칙
+        // 1. 반드시 글자, $, 밑줄로 시작(대문자로 시작안됨, 단 class만 예외)
+        // 2. 글자, 숫자, $, 밑줄만 사용 가능
+        // 3. 유니코드 (파이, 오메가 등등의 문자) 사용 가능
+        // 4. 예약어 불가능 (case, function, new, return, break, default, awaite) 등등 
+        // 5. carmel case(userNameTitle) / snake case(user_name)
+
+        // 문자열 연결
+        // const firstName = 'happy';
+        // const lastName = 'hacking';
+        // const fullName = firstName + lastName;
+        // document.write('<h1>' + fullName + '!!' + '</h1>');   
+
+        // // f'string 쓰듯이... 
+        // document.write(`<h1>${fullName}!!</h1>`)
+
+        // console.log(`Console ${fullName}`);
+
+        // // user input
+        // const userName = prompt('Hello! who r u??')
+        // let message = `<h1>Hello ${userName}</h1>`;
+
+        // document.write(message);
+
+        // 조건 분기
+        // const yourName = prompt('Who r u??')
+        // let message = ''
+
+        // if (yourName === 'harry') {
+        //     message = 'Hello! Admin!!!'
+        // } else if (yourName === 'neo') {
+        //     message = 'Hello Neo !!!@#'
+        // } else {
+        //     message = `<h1>hello ${yourName}</h1>`
+        // }
+        // document.write(message)
+
+        // === 는 타입까지 완벽하게 일치하는지 봄.... js에서는 ===, !== 권장
+
+        // 삼항연산자
+        // Boolean ? True : False 의 구조
+        const number = 9
+        number === 10 ? document.write('넘버는 10!') : document.write('넘버는 10이 아니야!')
+
+        // 일치 연산자 ===
+        // 엄격한 비교
+        // 메모리의 같은 객체를 가리키고, 같은 타입이고, 값도 같다.
+        // 일치 연산자를 사용하는 것이 좋다.
+
+        // // 동등 연산자 ==
+        // 형변환 비교, 메모리의 같은 객체를 가리키거나 같은 값을 갖도록 변환할 수 있다면 비교
+        // 서로 다른 타입이면 비교하기 전에 같은 자료형으로 변환하여 비교 (1 == "1")
+        // 골칫거리와 혼란을 야기할 수 있다.
+
+        // arrow function
+        // function과 중괄호를 줄이려고 고안된 단축 문법
+        // 1. function은 생략해도 된다.
+        // 2. 함수에 매개변수가 단 하나뿐이라면 ()도 생략 가능
+        // 3. 함수 body에 표현식이 하나라면 {} 와 return 생략 가능
+
+
+        // const mul = function (num1, num2) {
+        //     return num1 * num2
+        // }
+
+        // const mul = (num1, num2) => {
+        //     return num1 * num2
+        // }
+
+        // const mul = (num1, num2) => num1 * num2
+
+        // const sqrt = num1 => num1*num1
+
+
+        // 익명함수,, 1회용 함수
+        function (num) {
+            return num ** 3
+        }
+
+        num => num **3 // 익명함수    람다같이 쓰는거..
+        (num => num**3)(3)   // 익명함수 즉시 실행   
+        const cube = num => num ** 3 // 기명함수로 만들기(변수나 상수에 할당)
+        cube(2)
+
+
+
+
+
+    </script>
+</body>
+</html>
