@@ -19,9 +19,11 @@
         let clickCount = 0
         // button에 'click' eventListner를 추가한다. 클릭이 일어나면,
         // clickCount 가 1씩 올라간다.
-        button.addEventListener('click', event => {clickCount += 1
+        button.addEventListener('click', event => {
+        // clickCount += 1
         // header 안의 내용을 clickCount로 바꾼다.
-        header.innerHTML = `${clickCount}`
+        // header.innerHTML = `${clickCount}`
+        header.innerText = ++clickCount
     })
     </script>
 

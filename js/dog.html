@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width:300px;
+            height:300px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>댕댕이</h1>
+    <button class = 'press1'>멍</button>
+    <button class = 'press2'>냥</button>
+    <div class="animals"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+
+
+
+    <script>
+        // 버튼을 button 상수에 할당        
+        const getDogImage = function () {
+        // 요청을 보내서 가져오면
+            axios.get('https://dog.ceo/api/breeds/image/random')
+                // 응답은 내용 (response)의 response.data.message 를 반환하고, 
+                .then(response => response.data.message)
+                // 반환된 내용을 url로 담아서
+                .then(url => {
+                    // image tag를 만들고 
+                    const imageTag = document.createElement('img')
+                    // url 을 이미지 src로 달고
+                    imageTag.src = url
+                    // 원하는 위치(animals div)에 붙이자.
+                    document.querySelector('.animals').append(imageTag)
+                    console.log('붙였다!!!')
+                })
+                // .catch(error => error)
+        }
+        const button = document.querySelector('.press1')
+        button.addEventListener('click', getDogImage)
+
+
+        const getCatImage = function () {     
+            axios.get('https://api.thecatapi.com/v1/images/search')
+                .then(response => response.data[0].url)
+                .then(url => {
+                    const imageTag = document.createElement('img')
+                    imageTag.src = url
+                    document.querySelector('.animals').prepend(imageTag)
+                    console.log('붙였다!!!')
+                })
+     
+        }
+        const button1 = document.querySelector('.press2')
+        button1.addEventListener('click', getCatImage)
+
+
+    </script>
+    
+</body>
+</html>
