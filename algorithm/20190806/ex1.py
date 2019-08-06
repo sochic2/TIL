@@ -14,6 +14,7 @@ def realrot(arr):
         if rotation[i] != rotation[i+1]:
             flag[i] = 1
 
+    flag
 
     return
 
