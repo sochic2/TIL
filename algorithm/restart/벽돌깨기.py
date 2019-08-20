@@ -1,9 +1,9 @@
 import sys, copy
 sys.stdin = open('벽돌깨기.txt')
 
+
 def perm(a):
     global N, result
-
 
     if a >= N:
         # print(parr)
@@ -13,25 +13,23 @@ def perm(a):
     else:
         for i in range(W):
             parr[a] = i
-            perm(a+1)
+            perm(a + 1)
             parr[a] = 0
 
 
 def down(arr):
     global H
-    for j in range(W):
-        for i in range(H-1, -1, -1):
-            if arr[i][j] == 0:
-                end = (i, j)
-                break
-        for k in range(H-1, -1, -1):
-            if arr[k][j] == 0 : continue
-            if k>i: continue
-            if i< 1: continue
 
-            arr[k][j], arr[end[0]][end[1]] = arr[end[0]][end[1]], arr[k][j]
-            i -= 1
-            end = (i, j)
+    for x in range(W):
+        flag = 0
+        for y in range(H - 1, -1, -1):
+            if arr[y][x] == 0 and flag == 0:
+                for k in range(y, -1, -1):
+                    if arr[k][x] != 0:
+                        arr[y][x], arr[k][x] = arr[k][x], arr[y][x]
+                        break
+                    if k == 0 and arr[k][x] ==0:
+                        flag = 1
 
 
 def check(arr):
@@ -44,8 +42,8 @@ def check(arr):
         if cnt != 1:
             for i in range(4):
                 for j in range(1, cnt):
-                    nx = x+dx[i]*j
-                    ny = y+dy[i]*j
+                    nx = x + dx[i] * j
+                    ny = y + dy[i] * j
 
                     if nx < 0 or nx >= W or ny < 0 or ny >= H:
                         break
@@ -56,8 +54,6 @@ def check(arr):
 
     down(arr)
     return
-
-
 
 
 def brick(arr):
@@ -78,14 +74,8 @@ def brick(arr):
         result = ssum
 
 
-
-
-
-
-
-
 T = int(input())
-for tc in range(1, T+1):
+for tc in range(1, T + 1):
     N, W, H = map(int, input().split())
     mapp = [list(map(int, input().split())) for _ in range(H)]
     parr = [0] * N
@@ -95,4 +85,3 @@ for tc in range(1, T+1):
 
     perm(0)
     print('#{} {}'.format(tc, result))
-
