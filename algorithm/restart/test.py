@@ -1,16 +1,3 @@
-def dfs(n):
-    global N
-    if n >= 3:
-        print(arr)
-    else:
-
-        arr[n] = 1
-        dfs(n+1)
-        arr[n] = 0
-        dfs(n+1)
-
-
-
-N = 3
-arr = [0, 0, 0]
-dfs(0)
+a = [[1, 2, 3], [3, 2, 1]]
+a.sort(key=lambda x:x[2])
+print(a)
