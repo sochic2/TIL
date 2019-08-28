@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4199296b-cb73-4312-b95d-8101437a0f96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/디저트.py" beforeDir="false" afterPath="$PROJECT_DIR$/디저트.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="-342388566">
       <usages-collector id="statistics.lifecycle.project">
@@ -68,30 +71,21 @@
       </usages-collector>
     </session>
   </component>
+=======
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/등산로조성.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/디저트.py">
+        <entry file="file://$PROJECT_DIR$/보호필름.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <marker date="1566896185821" expanded="true" signature="113:117" ph="..." />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/디저트.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1768">
@@ -102,9 +96,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/등산로조성.txt">
+=======
+        <entry file="file://$PROJECT_DIR$/보호필름.txt">
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="9" />
+              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -124,12 +121,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../../../../ai-sub2/movie_rating.py" />
-        <option value="$PROJECT_DIR$/../../../../../untitled2/test.py" />
+        <option value="$USER_HOME$/ai-sub2/movie_rating.py" />
+        <option value="$USER_HOME$/untitled2/test.py" />
         <option value="$PROJECT_DIR$/등산로조성.py" />
         <option value="$PROJECT_DIR$/등산로조성.txt" />
         <option value="$PROJECT_DIR$/디저트.txt" />
         <option value="$PROJECT_DIR$/디저트.py" />
+        <option value="$PROJECT_DIR$/보호필름.txt" />
+        <option value="$PROJECT_DIR$/보호필름.py" />
       </list>
     </option>
   </component>
@@ -149,9 +148,15 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
+=======
+    <option name="x" value="825" />
+    <option name="width" value="1104" />
+    <option name="height" value="1039" />
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
   </component>
   <component name="ProjectId" id="1PdKxFq7GscMFSkJIdORu0xV82W" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -162,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,6 +178,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +198,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.6485">
+=======
+  <component name="RunManager" selected="Python.보호필름">
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
     <configuration name="무선충전" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="restart" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,6 +216,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/무선충전.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="보호필름" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="restart" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\LG\Desktop\남기\TIL\algorithm\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/보호필름.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -412,11 +442,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\multicampus\Desktop\untitled2\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../untitled2" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/untitled2" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../untitled2/test.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/untitled2/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -431,11 +461,19 @@
       <item itemvalue="Python.무선충전" />
       <item itemvalue="Python.5653줄기세포" />
       <item itemvalue="Python.test" />
+<<<<<<< HEAD
       <item itemvalue="Python.6485" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.6485" />
+=======
+      <item itemvalue="Python.보호필름" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.보호필름" />
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
         <item itemvalue="Python.test" />
         <item itemvalue="Python.5653줄기세포" />
         <item itemvalue="Python.test (1)" />
@@ -457,15 +495,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="760" y="0" width="784" height="832" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19812584" />
+=======
+    <frame x="660" y="0" width="883" height="831" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19858156" />
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.32331902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4045911" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32378224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40401146" />
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -496,9 +545,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,13 +602,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../ai-sub2/movie_rating.py">
+    <entry file="file://$USER_HOME$/ai-sub2/movie_rating.py" />
+    <entry file="file://$USER_HOME$/untitled2/test.py" />
+    <entry file="file://$PROJECT_DIR$/등산로조성.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        <state relative-caret-position="340">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../../../../untitled2/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -560,9 +623,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/등산로조성.py">
+=======
+    <entry file="file://$PROJECT_DIR$/디저트.txt">
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="1768">
+          <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -573,20 +639,31 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/등산로조성.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/디저트.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <marker date="1566896185821" expanded="true" signature="113:117" ph="..." />
-          </folding>
+>>>>>>> b49c7a91dad294e235d24222af5db08a9d3c8157
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/보호필름.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/보호필름.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
