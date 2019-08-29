@@ -1,25 +1,54 @@
-import sys
-sys.stdin = open('디저트.txt')
-def check(y, x, yy, xx):
-    result = []
-    dy = [1, 1, -1, -1]
-    dx = [-1, 1, 1, -1]
-    for py in range(yy):
+import copy
 
-    for px in range(xx):
+def BFS(x, y, distance, chance, temp):
+    global result
+    q = []
+    q.append((x, y, distance, chance, temp))
 
-    for py in range(yy):
+    dx = [0, 0, 1, -1]
+    dy = [1, -1, 0, 0]
 
-    for px in range(xx):
+    while len(q) != 0:
+        ax, ay, distance, chance, temp = q.pop(0)
 
+        for i in range(4):
+            nx = ax + dx[i]
+            ny = ay + dy[i]
 
-T = int(input())
-for tc in range(1, T+1):
-    N = int(input())
-    maparr = [list(map(int, input().split())) for _ in range(N)]
-    mmax = -1
-    for y in range(N):
-        for x in range(N):
-            for yy in range(N-1):
-                for xx in range(N-1):
-                    check(y, x, yy, xx)
+            # 벽처리
+            if nx < 0 or nx >= N or ny < 0 or ny >= M:
+                continue
+            # 길 0이 갈수있는곳, 1이 벽
+            if temp[nx][ny] != 0 and chance == 0:
+                continue
+            # chance
+            if temp[nx][ny] != 0 and chance == 1:
+                # temp[nx][ny] = 0
+                visited[nx][ny] = distance+1
+                q.append((nx, ny, distance+1, 0, temp))
+                # temp[nx][ny] = 1
+
+            # 탈출
+            if nx == N-1 and ny == M-1:
+                visited[nx][ny] = distance+1
+                # for i in visited:
+                #     print(i)
+                if result > distance+1:
+                    result = distance+1
+                    return result
+            # 이동
+            if temp[nx][ny] == 0 and visited[nx][ny] == 0:
+                visited[nx][ny] = distance+1
+                q.append((nx, ny, distance+1, chance, temp))
+    return -1
+
+N, M = map(int, input().split())
+data = [list(map(int, input())) for _ in range(N)]
+visited = [[0 for _ in range(M)] for _ in range(N)]
+temp = copy.deepcopy(data)
+# print(data)
+# print(visited)
+
+result = 987654321
+visited[0][0] = 1
+print(BFS(0, 0, 1, 1, temp))
