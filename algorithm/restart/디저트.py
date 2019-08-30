@@ -40,7 +40,7 @@ def perm(n, y, x):
         for i in range(2, N):
             parr[n] = i
             perm(n+1, y, x)
-            parr[n] = 0
+            # parr[n] = 0
 
 
 T = int(input())

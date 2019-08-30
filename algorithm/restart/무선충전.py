@@ -16,7 +16,6 @@ for tc in range(1, T+1):
     BC.sort(key = lambda x: x[3])
     BC.reverse()
 
-
     Apoint = (1, 1)
     Bpoint = (10, 10)
     charge = 0
