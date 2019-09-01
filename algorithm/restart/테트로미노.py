@@ -14,11 +14,11 @@ def dfs(y, x, n, cnt):
     for i in range(3):
         ny = y + dy[i]
         nx = x + dx[i]
-        if ny >= 0 or nx >= 0 or ny < N or nx < M:
-            if visit[ny][nx] == 0:
-                visit[ny][nx] = 1
-                dfs(ny, nx, n+1, cnt+arr[ny][nx])
-                visit[ny][nx] = 0
+        if ny < 0 or nx < 0 or ny >= N or nx >= M: continue
+        if visit[ny][nx] == 0:
+            visit[ny][nx] = 1
+            dfs(ny, nx, n+1, cnt+arr[ny][nx])
+            visit[ny][nx] = 0
 
 def fuck(y, x, count):
     global mmax
@@ -43,16 +43,17 @@ def fuck(y, x, count):
 
 N, M = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(N)]
-
+visit = [[False] * M for i in range(N)]
 mmax = -987654321
 
 
 for y in range(N):
     for x in range(M):
-        visit = [[False] * M for i in range(N)]
+
         visit[y][x] = 1
         fuck(y, x, arr[y][x])
         dfs(y, x, 1, arr[y][x])
+        visit[y][x] = 0
 
 
 
