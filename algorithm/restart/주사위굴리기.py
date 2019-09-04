@@ -2,7 +2,7 @@ import sys
 sys.stdin = open('주사위굴리기.txt')
 
 
-N, M, x, y, k = map(int, input().split())
+N, M, y, x, k = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(N)]
 direction = list(map(int, input().split()))
 dice = [0, 0, 0, 0, 0, 0, 0]
