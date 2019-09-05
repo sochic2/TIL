@@ -1,54 +1,50 @@
-import copy
-
-def BFS(x, y, distance, chance, temp):
-    global result
-    q = []
-    q.append((x, y, distance, chance, temp))
-
-    dx = [0, 0, 1, -1]
-    dy = [1, -1, 0, 0]
-
-    while len(q) != 0:
-        ax, ay, distance, chance, temp = q.pop(0)
-
+dr = (-1, 1, 0, 0)
+dc = (0, 0, -1, 1)
+def bfs(queue, visited):
+    global N, L, R, result
+    total, count = 0, 0
+    temp = []
+    while queue:
+        r, c = queue.pop(0)
+        total += raw[r][c]
+        count += 1
+        temp.append((r, c))
         for i in range(4):
-            nx = ax + dx[i]
-            ny = ay + dy[i]
-
-            # 벽처리
-            if nx < 0 or nx >= N or ny < 0 or ny >= M:
+            nr = r + dr[i]
+            nc = c + dc[i]
+            if not (N > nr >= 0 and N > nc >= 0):
                 continue
-            # 길 0이 갈수있는곳, 1이 벽
-            if temp[nx][ny] != 0 and chance == 0:
+            if visited[nr][nc]:
                 continue
-            # chance
-            if temp[nx][ny] != 0 and chance == 1:
-                # temp[nx][ny] = 0
-                visited[nx][ny] = distance+1
-                q.append((nx, ny, distance+1, 0, temp))
-                # temp[nx][ny] = 1
-
-            # 탈출
-            if nx == N-1 and ny == M-1:
-                visited[nx][ny] = distance+1
-                # for i in visited:
-                #     print(i)
-                if result > distance+1:
-                    result = distance+1
-                    return result
-            # 이동
-            if temp[nx][ny] == 0 and visited[nx][ny] == 0:
-                visited[nx][ny] = distance+1
-                q.append((nx, ny, distance+1, chance, temp))
-    return -1
-
-N, M = map(int, input().split())
-data = [list(map(int, input())) for _ in range(N)]
-visited = [[0 for _ in range(M)] for _ in range(N)]
-temp = copy.deepcopy(data)
-# print(data)
-# print(visited)
-
-result = 987654321
-visited[0][0] = 1
-print(BFS(0, 0, 1, 1, temp))
+            if not (R >= abs(raw[r][c] - raw[nr][nc]) >= L):
+                continue
+            queue.append((nr, nc))
+            visited[nr][nc] = 1
+    if count == 1:
+        return 0
+    avg = total // count
+    for r, c in temp:
+        raw[r][c] = avg
+    # result += 1
+    return 1
+def init():
+    global N, result
+    flag = 1
+    while flag:
+        flag = 0
+        visited = [[0] * N for _ in range(N)]
+        for i in range(N):
+            for j in range(N):
+                if visited[i][j]:
+                    continue
+                queue = [(i, j)]
+                visited[i][j] = 1
+                if bfs(queue, visited):
+                    flag = 1
+        if flag:
+            result += 1
+N, L, R = map(int, input().split())
+raw = [list(map(int, input().split())) for _ in range(N)]
+result = 0
+init()
+print(result)
