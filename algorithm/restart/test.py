@@ -1,3 +1,5 @@
+import sys
+sys.stdin = open('인구이동.txt')
 dr = (-1, 1, 0, 0)
 dc = (0, 0, -1, 1)
 def bfs(queue, visited):
