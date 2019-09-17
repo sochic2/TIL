@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block css %}
+    {% endblock %}
+
+    {% block content %}
+  
+    
+    <div id="main">
+        <div class="row d-flex justify-content-center" >
+        {% for movie in movies %}
+        <div class="ml-2 col-xl-2 col-lg-4 col-12">
+                <div class="card mb-2 bg-dark" style="width: 300px;">
+                    <a href="https://django-project-rngus3050.c9users.io/{{movie.id}}/"><img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" class="card-img-top" alt="{{movie.title}}" style="width: 300px; height: 500px;"></a>
+                    <div class="card-body bg-dark" style="width:300px; height: 150px;">
+                        <h5 class="card-title">
+                            {{ movie.title }}<br>
+                        </h5>
+                        <p class="card-text">{{ movie.tagline }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+    {% block script %}
+        <script src="{% static 'page/js/main.js' %}"></script>
+    {% endblock %}

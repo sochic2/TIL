@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block css %}
+    {% endblock %}
+
+    {% block content %}
+    <nooooooooooryuc id="{{ genre_pk }}"></nooooooooooryuc>
+   
+
+    <div id="genre">
+        <h1>[[ genreMovies[0].genres ]]</h1>
+        <div class="row d-flex justify-content-center" >
+        <div v-for="genreMovie in genreMovies">
+            
+                <div class="ml-2 col-3">
+                    <div class="card mb-2 bg-dark" style="width: 300px;">
+                        <a :href=`https://django-project-rngus3050.c9users.io/${genreMovie.id}/`><img :src=`https://image.tmdb.org/t/p/w500/${genreMovie.poster_path}` class="card-img-top" :alt="genreMovie.title" style="width: 300px; height: 500px;"></a>
+                        <div class="card-body bg-dark" style="height: 150px;">
+                            <h5 class="card-title">
+                                [[ genreMovie.title ]]<br>
+                                <b>[[ genreMovie.genres ]]</b><br>
+                            </h5>
+                            <p class="card-text">[[ genreMovie.tagline ]]</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    
+    {% block script %}
+        <script src="{% static 'page/js/genre.js' %}"></script>
+    {% endblock %}

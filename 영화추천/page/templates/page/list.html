@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'page/dist/css/slider-pro.min.css' %}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'page/libs/fancybox/jquery.fancybox.css' %}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'page/css/examples.css' %}" media="screen"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="{% static 'page/libs/jquery-1.11.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'page/dist/js/jquery.sliderPro.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'page/libs/fancybox/jquery.fancybox.pack.js' %}"></script>
+    <style>
+    .sp-button {
+    	border: white;
+    	color: white;
+    	background-color: white;
+    }
+    .sp-selected-button {
+    	color: red;
+    	background-color: red;
+    }
+    
+    </style>
+    {% if ratings %}
+    <script type="text/javascript">
+    $( document ).ready(function( $ ) {
+		$( '#myfavorite_genre' ).sliderPro({
+			width: 300,
+			height: 300,
+			visibleSize: '100%',
+			forceSize: 'fullWidth',
+			autoSlideSize: true
+		});
+
+		// instantiate fancybox when a link is clicked
+		$( ".slider-pro" ).each(function(){
+			var slider = $( this );
+
+			slider.find( ".sp-image" ).parent( "a" ).on( "click", function( event ) {
+				event.preventDefault();
+			
+				if ( slider.hasClass( "sp-swiping" ) === false ) {
+					var sliderInstance = slider.data( "sliderPro" ),
+						isAutoplay = sliderInstance.settings.autoplay;
+
+					$.fancybox.open( slider.find( ".sp-image" ).parent( "a" ), {
+						index: $( this ).parents( ".sp-slide" ).index(),
+						afterShow: function() {
+							if ( isAutoplay === true ) {
+								sliderInstance.settings.autoplay = false;
+								sliderInstance.stopAutoplay();
+							}
+						},
+						afterClose: function() {
+							if ( isAutoplay === true ) {
+								sliderInstance.settings.autoplay = true;
+								sliderInstance.startAutoplay();
+							}
+						}
+							
+					});
+				}
+			});
+		});
+	});
+
+</script>
+	{% endif %}
+    <script type="text/javascript">
+    $( document ).ready(function( $ ) {
+		$( '#popularity' ).sliderPro({
+			width: 300,
+			height: 300,
+			visibleSize: '100%',
+			forceSize: 'fullWidth',
+			autoSlideSize: true
+		});
+
+		// instantiate fancybox when a link is clicked
+		$( ".slider-pro" ).each(function(){
+			var slider = $( this );
+
+			slider.find( ".sp-image" ).parent( "a" ).on( "click", function( event ) {
+				event.preventDefault();
+			
+				if ( slider.hasClass( "sp-swiping" ) === false ) {
+					var sliderInstance = slider.data( "sliderPro" ),
+						isAutoplay = sliderInstance.settings.autoplay;
+
+					$.fancybox.open( slider.find( ".sp-image" ).parent( "a" ), {
+						index: $( this ).parents( ".sp-slide" ).index(),
+						afterShow: function() {
+							if ( isAutoplay === true ) {
+								sliderInstance.settings.autoplay = false;
+								sliderInstance.stopAutoplay();
+							}
+						},
+						afterClose: function() {
+							if ( isAutoplay === true ) {
+								sliderInstance.settings.autoplay = true;
+								sliderInstance.startAutoplay();
+							}
+						}
+							
+					});
+				}
+			});
+		});
+	});
+
+</script>
+    <script type="text/javascript">
+    $( document ).ready(function( $ ) {
+		$( '#budget' ).sliderPro({
+			width: 300,
+			height: 300,
+			visibleSize: '100%',
+			forceSize: 'fullWidth',
+			autoSlideSize: true
+		});
+
+		// instantiate fancybox when a link is clicked
+		$( ".slider-pro" ).each(function(){
+			var slider = $( this );
+
+			slider.find( ".sp-image" ).parent( "a" ).on( "click", function( event ) {
+				event.preventDefault();
+			
+				if ( slider.hasClass( "sp-swiping" ) === false ) {
+					var sliderInstance = slider.data( "sliderPro" ),
+						isAutoplay = sliderInstance.settings.autoplay;
+
+					$.fancybox.open( slider.find( ".sp-image" ).parent( "a" ), {
+						index: $( this ).parents( ".sp-slide" ).index(),
+						afterShow: function() {
+							if ( isAutoplay === true ) {
+								sliderInstance.settings.autoplay = false;
+								sliderInstance.stopAutoplay();
+							}
+						},
+						afterClose: function() {
+							if ( isAutoplay === true ) {
+								sliderInstance.settings.autoplay = true;
+								sliderInstance.startAutoplay();
+							}
+						}
+							
+					});
+				}
+			});
+		});
+	});
+
+</script>
+    {% endblock %}
+
+
+    {% block content %}
+
+<div id="myfavorite_genre" class="slider-pro">
+	
+{% if ratings %}
+<h1>My Favorite Genre {{ like_genre }} TOP 10</h1>
+
+        <div class="sp-slides">
+            {% for favorite in favorite_genres %}
+                {% if favorite.poster_path != "N/A" %}
+
+                
+                <div id="app" class="sp-slide" >
+                    <a href="https://image.tmdb.org/t/p/w500{{ favorite.poster_path }}">
+                        <img class="sp-image" src="" 
+                        data-src="https://image.tmdb.org/t/p/w500{{ favorite.poster_path }}"
+                        data-retina="https://image.tmdb.org/t/p/w500{{ favorite.poster_path }}" alt="{{ favorite.poster_path }}"/>
+                    </a>
+                    <p class="sp-caption"><a href="{% url 'page:detail' favorite.pk %}">{{ favorite.title }} | {{ favorite.tagline }}</a></p>
+                </div>
+ 
+            
+            {% endif %}
+            {% endfor %}
+        </div>
+</div>
+{% endif %}
+
+    
+<div id="popularity" class="slider-pro">
+<h1>Popular TOP 10</h1>
+        <div class="sp-slides">
+            {% for movie in movies %}
+                {% if movie.poster_path != "N/A" %}
+
+                
+                <div id="app" class="sp-slide" >
+                    <a href="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}">
+                        <img class="sp-image" src="" 
+                        data-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
+                        data-retina="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt="{{ movie.poster_path }}"/>
+                    </a>
+                    <p class="sp-caption"><a href="{% url 'page:detail' movie.pk %}">{{ movie.title }} | {{ movie.tagline }}</a></p>
+                </div>
+ 
+            
+            {% endif %}
+            {% endfor %}
+        </div>
+</div>
+
+
+
+<div id="budget" class="slider-pro">
+<h1>Budget TOP 10</h1>
+        <div class="sp-slides">
+            {% for budget in budgets %}
+                <div id="app" class="sp-slide" >
+                    <a href="https://image.tmdb.org/t/p/w500{{ budget.poster_path }}">
+                        <img class="sp-image" src="" 
+                        data-src="https://image.tmdb.org/t/p/w500{{ budget.poster_path }}"
+                        data-retina="https://image.tmdb.org/t/p/w500{{ budget.poster_path }}" alt="{{ budget.poster_path }}"/>
+                    </a>
+                    <p class="sp-caption"><a href="{% url 'page:detail' budget.pk %}">{{ budget.title }} | {{ budget.tagline }}</a></p>
+                </div>
+
+            {% endfor %}
+        </div>
+</div>
+
+
+
+
+    
+<!--    <h1 class="text-light" >TOP5</h1>-->
+<!--    <div id="app" class="d-flex">-->
+<!--        <div class="ml-2">-->
+            
+<!--                <div v-for="(movie,index) in movies" v-if="index <= 4">-->
+<!--<div id="example2" class="slider-pro">-->
+<!--	<div class="sp-slides">-->
+<!--		<div class="sp-slide">-->
+
+                    
+<!--                        <div class="card mb-2" style="width: 300px;">-->
+<!--                            <a :href=`https://django-project-rngus3050.c9users.io/${movie.id}/`><img :src=`https://image.tmdb.org/t/p/w500/${movie.poster_path}` class="card-img-top" :alt="movie.title" style="width: 300px; height: 500px;"></a>-->
+<!--                            <div class="card-body bg-dark" style="height: 150px;">-->
+<!--                                <h5 class="card-title">-->
+<!--                                    [[ movie.title ]]<br>-->
+<!--                                    <b>[[ movie.genres ]]</b><br>-->
+<!--                                    <div v-for="sc in movie.rating_set">-->
+<!--                                        <b>[[ sc.score ]]</b>-->
+<!--                                    </div>-->
+<!--                                </h5>-->
+<!--                                <p class="card-text">[[ movie.tagline ]]</p>-->
+<!--                            </div>-->
+                       
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+{% endblock %}
+    
+{% block script %}
+    <script src="{% static 'page/js/app.js' %}"></script>
+{% endblock  %}

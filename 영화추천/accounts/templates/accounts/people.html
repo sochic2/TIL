@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">{{ people.username }}'s Profile</h1>
+<div class="jumbotron jumbotron-fluid text-center mb-2 text-white bg-dark">
+  <div class="container">
+    <h1 class="display-4">{{ people.profile.nickname }}</h1>
+    <p class="lead">{{ people.profile.introduction }}</p>
+    <hr class="my-4 border-white">
+    <p class="lead">팔로잉 : {{ people.followings.all.count }} / 팔로워 : {{ people.followers.all.count }}</p>
+    {% if user != people %}
+        {% if user in people.followers.all %}
+        <a href="{% url 'accounts:follow' people.pk %}" class="btn btn-outline-primary">Unfollow</a>
+        {% else %}
+        <a href="{% url 'accounts:follow' people.pk %}" class="btn btn-primary">Follow</a>
+        {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% if user == people %}
+<div class="text-center">
+    <a href="{% url 'accounts:update' %}" class="badge badge-info">정보 수정</a>
+    <a href="{% url 'accounts:profile_update' %}" class="badge badge-success">프로필 수정</a>
+    <a href="{% url 'accounts:password' %}" class="badge badge-warning">비밀번호 변경</a>
+</div>
+{% endif %}
+<hr>
+<h3 class="text-center">평점을 남겼던 영화</h3>
+<div class="row d-flex justify-content-center" >
+    {% for rating in people.rating_set.all %}
+        
+            <div class="ml-2 col-xl-2 col-lg-4 col-12">
+                <div class="card mb-2 bg-dark" style="width: 300px;">
+                <a href="https://django-project-rngus3050.c9users.io/{{rating.movie.id}}/"><img src="https://image.tmdb.org/t/p/w500/{{rating.movie.poster_path}}" class="card-img-top" alt="{{rating.movie.title}}" style="width: 300px; height: 500px;"></a>
+                    <div class="card-body bg-dark" style="width:300px; height: 150px;">
+                        <h5 class="card-title">
+                            {{ rating.movie.title }}<br>
+                        </h5>
+                        <p class="card-text">{{ rating.movie.tagline }}</p>
+                        <footer class="blockquote-footer text-danger">{{ rating }}</footer>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block css %}
+    {% endblock %}
+
+    {% block content %}
+    
+    {% endblock %}
+    {% block script %}
+    <form action="" method="POST">
+       {% csrf_token %}
+       {{ ratingform }}
+       <input type="submit" value="작성">
+    </form>
+    {% endblock %}

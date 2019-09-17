@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+<div class="text-light">
+<h1>로그인</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <button type="submit" class="btn btn-outline-light">Send</button>
+    <button type="clear" class="btn btn-outline-light">Clear</button>
+</form>
+</div>
+
+{% endblock  %}
