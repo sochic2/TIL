@@ -24,23 +24,24 @@ def power(n):
         rresult = final[0][2]
         while q:
             new = q.pop(0)
-            for i in range(len(final)):
-                if final[i][0] == new or final[i][1] == new:
-                    if final[i][0] not in result:
-                        result.append(final[i][0])
-                        q.append(final[i][0])
-                        rresult += final[i][2]
-                    if final[i][1] not in result:
-                        result.append(final[i][1])
-                        q.append(final[i][1])
-                        rresult += final[i][2]
+            for z in range(len(final)):
+                if final[z][0] == new or final[z][1] == new:
+                    if final[z][0] not in result:
+                        result.append(final[z][0])
+                        q.append(final[z][0])
+                        rresult += final[z][2]
+                    if final[z][1] not in result:
+                        result.append(final[z][1])
+                        q.append(final[z][1])
+                        rresult += final[z][2]
         result = list(set(result))
-        # print(result)
+        # print(final)
         if result == list(range(1, cnt)):
+            # print(check)
+            # print(result)
+            # print(rresult)
             if solution >= rresult:
                 solution = rresult
-
-
 
     else:
         check[n] = 1
@@ -90,7 +91,8 @@ for y in range(Y):
                     ccnt += 1
                     ny += dy[i]
                     nx += dx[i]
-
+# for i in narr:
+#     print(*i)
 
 bridge = []
 for key, value in dis_dict.items():
@@ -98,6 +100,8 @@ for key, value in dis_dict.items():
     key.append(value)
     bridge.append(key)
 
+# print('bridge')
+# print(bridge)
 bridge_length = len(bridge)
 check = [0] * bridge_length
 
