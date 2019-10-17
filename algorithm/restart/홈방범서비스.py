@@ -38,6 +38,7 @@ for tc in range(1, T+1):
 
     if N % 2 == 0:
         max_K = (N*2+1)//2 + 1
+
     else:
         max_K = (N*2)//2 + 1
 
