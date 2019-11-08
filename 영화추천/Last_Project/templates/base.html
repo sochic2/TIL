@@ -41,7 +41,7 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <div v-for="genre in genres">
-                  <a class="dropdown-item" :href=`https://django-project-rngus3050.c9users.io/genre/${genre.genre_box_id}`>[[ genre.name ]]</a>
+                  <a class="dropdown-item" :href=`/genre/${genre.genre_box_id}`>[[ genre.name ]]</a>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link text-danger" href="https://django-project-rngus3050.c9users.io/accounts/logout/">LogOut</a>
+          <a class="nav-link text-danger" href="/accounts/logout/">LogOut</a>
         </li>
         
         
@@ -76,11 +76,11 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-light" href="https://django-project-rngus3050.c9users.io/accounts/login/">Login</a>
+          <a class="nav-link text-light" href="/accounts/login/">Login</a>
         </li>
         
          <li class="nav-item">
-          <a class="nav-link text-primary" href="https://django-project-rngus3050.c9users.io/accounts/signup/">Sign UP</a>
+          <a class="nav-link text-primary" href="/accounts/signup/">Sign UP</a>
         </li>
       
       {% endif %}

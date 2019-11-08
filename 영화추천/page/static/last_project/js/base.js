@@ -7,10 +7,9 @@ const base = new Vue({
     },
     methods : {
         getGenre: function () {
-            axios.get('https://django-project-rngus3050.c9users.io/posts/v1/genres/')
+            axios.get('/posts/v1/genres/')
             .then(response => response.data)
             .then(genres => {this.genres = genres})
-            
         }, 
     },
     
