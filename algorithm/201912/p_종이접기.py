@@ -20,6 +20,7 @@ def solution(n):
         t += 1
     return print(answer)
 
+
 solution(1)
 solution(2)
 solution(3)
