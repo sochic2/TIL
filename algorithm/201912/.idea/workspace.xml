@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9aaa7b3-d8fd-4b64-975a-41a8a1f9cad9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p_추석트래픽.py" beforeDir="false" afterPath="$PROJECT_DIR$/p_추석트래픽.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Slide_08_OOP_intro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Slide_08_OOP_intro.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/p_추석트래픽.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -82,7 +80,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -208,9 +206,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="771" y="0" width="1158" height="1048" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119642854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119642854" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,7 +267,7 @@
     <entry file="file://$PROJECT_DIR$/p_추석트래픽.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
