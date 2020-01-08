@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cea9faa6-5431-4c6a-946d-f62fffc2804c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201912/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/201912/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2020_01/타일장식물.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" lean-forward="true" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="119">
+              <caret line="7" column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2020_01/자물쇠와 열쇠.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -79,13 +85,14 @@
         <option value="$PROJECT_DIR$/ad준비/장군.py" />
         <option value="$PROJECT_DIR$/2020_01/2xn타일링.py" />
         <option value="$PROJECT_DIR$/2020_01/타일장식물.py" />
+        <option value="$PROJECT_DIR$/2020_01/자물쇠와 열쇠.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="794" />
+    <option name="width" value="1133" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -130,8 +137,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.타일장식물">
-    <configuration name="색종이 배치" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.자물쇠와 열쇠">
+    <configuration name="자물쇠와 열쇠" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,11 +146,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/보충/IM대비" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2020_01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/보충/IM대비/색종이 배치.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2020_01/자물쇠와 열쇠.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,6 +172,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/보충/IM대비/나는 학급회장이다.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="색종이 배치" type="PythonConfigurationType" factoryName="Python">
+      <module name="algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/보충/IM대비" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/보충/IM대비/색종이 배치.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -385,7 +413,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.타일장식물" />
+        <item itemvalue="Python.자물쇠와 열쇠" />
         <item itemvalue="Python.2xn타일링" />
         <item itemvalue="Python.snake" />
         <item itemvalue="Python.창고다각형" />
@@ -406,16 +434,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="951" y="0" width="978" height="1039" extended-state="0" />
-    <editor active="true" />
+    <frame x="794" y="0" width="1133" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15106383" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12968037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998565" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23093922" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28066298" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23220153" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5224534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -435,6 +462,16 @@
           <url>file://$PROJECT_DIR$/2020_01/2xn타일링.py</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2020_01/타일장식물.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2020_01/자물쇠와 열쇠.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -649,8 +686,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2020_01/타일장식물.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="true" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020_01/자물쇠와 열쇠.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
