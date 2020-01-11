@@ -2,6 +2,7 @@ n = 3
 computers = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
 
 
+
 def solution(n, computers):
     def dfs(y, start):
         for xx in range(n):
@@ -15,6 +16,7 @@ def solution(n, computers):
                 dfs(x, y)
     visit_2 = set(visit)
     answer = len(visit_2)
+
 
     return answer
 
