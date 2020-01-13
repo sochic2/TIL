@@ -10,6 +10,7 @@ def solution(n, computers):
                 visit[xx] = start
                 dfs(xx, start)
     visit = [-1] * n
+
     for y in range(n):
         for x in range(n):
             if computers[y][x] == 1 and visit[x] == -1:
