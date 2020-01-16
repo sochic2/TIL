@@ -17,6 +17,7 @@ def solution(n, build_frame):
                 result.append([x, y, structure])
 
 
+
         # 설치
         else:
             result.append([x, y, structure])
