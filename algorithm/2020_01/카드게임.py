@@ -19,6 +19,8 @@ def solution(left, right):
 print(solution(left, right))
 #
 #
+
+
 # def solution(left, right):
 #     dp = [[0 for x in range(len(left)+1)] for y in range(len(right)+1)]
 #     for i in range(1, len(left)+1):
