@@ -17,6 +17,7 @@ def solution(left, right):
     return visit[len(left)][len(right)]
 
 print(solution(left, right))
+
 #
 #
 
