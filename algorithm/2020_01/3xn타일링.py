@@ -6,4 +6,5 @@ def solution(n):
         answers[i] = answers[i-2]*3+special*2
         special+=answers[i-2]
 
+
     return answers[n]%1000000007
