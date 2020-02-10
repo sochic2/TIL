@@ -57,7 +57,7 @@ def noremove():
                     plates[y][x] += 1
                 elif plates[y][x] > average:
                     plates[y][x] -= 1
-                    
+
 
 N, M, T = map(int, input().split())
 plates = [list(map(int, input().split())) for _ in range(N)]
