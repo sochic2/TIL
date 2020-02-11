@@ -22,6 +22,7 @@ for y in range(N):
 
 
 
+
 while q:
     y, x, chess, location, turn = q.pop(0)
     if location == N**2:
