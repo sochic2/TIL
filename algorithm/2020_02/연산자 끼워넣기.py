@@ -24,6 +24,7 @@ def dfs(n, num):
             sachic[j] += 1
 
 
+
 N = int(input())
 numbers = list(map(int, input().split()))
 sachic = list(map(int, input().split()))
