@@ -45,6 +45,7 @@ while q:
             visit[nry][nrx][nby][nbx] = 1
             q.append((cnt+1, nry, nrx, nby, nbx))
 
+
 if result == 987654321:
     result = -1
 print(result)
