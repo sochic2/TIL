@@ -23,6 +23,7 @@ while t < 101:
                 for o in range(len(ttu)):
                     if ttu[o][1] == marr[y][x]:
                         ttu[o][0] += 1
+
                         flag = 1
                 if flag == 0:
                     ttu.append([1, marr[y][x]])
