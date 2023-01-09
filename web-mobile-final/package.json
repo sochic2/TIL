@@ -13,7 +13,7 @@
     "core-js": "^2.6.5",
     "firebase": "^6.3.4",
     "firestore": "^1.1.6",
-    "firestore-export-import": "^0.2.6",
+    "firestore-export-import": "^1.3.5",
     "node-cron": "^2.0.3",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
