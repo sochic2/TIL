@@ -8,7 +8,7 @@ django-appconf==1.0.3
 django-bootstrap4==0.0.8
 django-cors-headers==2.5.3
 django-crispy-forms==1.7.2
-django-debug-toolbar==1.11
+django-debug-toolbar==1.11.1
 django-imagekit==4.0.2
 django-mysql==3.0.0.post1
 django-rest-swagger==2.2.0
